@@ -1,0 +1,28 @@
+.list-group {
+  margin-top: 2rem;
+  max-width: 50%;
+  margin: 8rem auto;
+}
+
+.anchor-buttons {
+  float: right;
+  margin-left: 5px;
+}
+
+.list-group button {
+  margin: 5px;
+  float: left;
+}
+
+.individual-player:hover {
+  background-color: #fff;
+}
+
+.list-label {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#delete-button {
+  color: white;
+}

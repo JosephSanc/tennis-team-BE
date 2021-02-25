@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div class="list-group">
+  <label class="list-group-item list-group-item-action active list-label">
+    List of Players
+  </label>
+  <a class="list-group-item list-group-item-action individual-player" *ngFor="let player of players">
+    {{player.firstName + " " + player.lastName}}  ID:   {{player.playerId}}
+    <a type="button" class="btn btn-danger anchor-buttons" id="delete-button" (click)="deletePlayer(player)">Delete</a>
+    <a routerLink="/players/{{player.playerId}}" type="button" class="btn btn-primary anchor-buttons">Edit</a>
+  </a>
+  <button routerLink="/add-player" type="button" class="btn btn-secondary">Add Player</button>
+</div>
+</body>
+</html>
